@@ -12,7 +12,7 @@ class SeparatorProvider implements OptionProvider
 
     public function render(array $option, string $moduleId): string
     {
-        return '<tr class="heading"><td colspan="2">' . htmlspecialcharsbx($option['name']) . '</td></tr>';
+        return '<tr class="heading"><td colspan="2">' . $option['name'] . '</td></tr>';
     }
 
     public function save(array $option, string $moduleId, mixed $value): void
